@@ -35,10 +35,9 @@ const App = () => {
       
         <p>Current values in store</p>
         <div className="output">
-      Name - Thomas Edward Stark
-      
-        <p>Name: {name}</p>
-        <p>Email: {email}</p>
+     
+        <p>Name - {name}</p>
+        <p>Email - {email}</p>
        
       </div>
     </div>
