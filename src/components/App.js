@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateName, updateEmail } from "./Actions";
 import "./../styles/App.css";
 
-
 const App = () => {
   const name = useSelector((state) => state.name);
   const email = useSelector((state) => state.email);
@@ -26,19 +25,18 @@ const App = () => {
         type="text"
         value={name}
         onChange={handleNameChange}
-       
       /><br /><br />
       <label>Email:</label>
       <input
         type="email"
         value={email}
-        onChange={handleEmailChange} 
-        
+        onChange={handleEmailChange}
       />
       <div className="output">
-      <p>Current values in store</p>
-      <p>Name: {name}</p>
-      <p>Email: {email}</p>
+        <p>Current values in store</p>
+       
+        <p>Name: {name}</p>
+        <p>Email: {email}</p>
       </div>
     </div>
   );

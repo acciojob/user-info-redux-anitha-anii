@@ -1,4 +1,3 @@
-// actions.js
 export const UPDATE_NAME = "UPDATE_NAME";
 export const UPDATE_EMAIL = "UPDATE_EMAIL";
 
@@ -11,3 +10,4 @@ export const updateEmail = (email) => ({
   type: UPDATE_EMAIL,
   payload: email,
 });
+
